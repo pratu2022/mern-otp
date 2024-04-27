@@ -4,6 +4,7 @@ import Loginpage from "./pages/Loginpage"
 import Forget from "./pages/Forget"
 import { Toaster } from "react-hot-toast"
 import Verify from "./pages/Verify"
+import Home from "./pages/Home"
 
 export default function App() {
   return (
@@ -11,7 +12,7 @@ export default function App() {
       <BrowserRouter>
         <Toaster />
         <Routes>
-          <Route path="/" element={<h3>Hello World</h3>} />
+          <Route path="/" element={<Home/>} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Loginpage />} />
           <Route path="/forget" element={<Forget />} />
